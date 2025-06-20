@@ -53,7 +53,10 @@ dotnet run --project InventarioApp
 
 ---
 
-## 📘 Autor
+
+## 👤 Autor
 
 **Ricardo Jara Gaspar**  
-Backend Developer | Arquitectura de Software | .NET Core
+Ingeniero de Software especializado en .NET y Arquitectura de Software  
+[GitHub](https://github.com/RJARAG-92) · [LinkedIn](https://www.linkedin.com/in/ricardo-jara-gaspar-b7a515265/) · 🇵🇪 Perú
+
