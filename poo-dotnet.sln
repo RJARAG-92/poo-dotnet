@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NominaApp", "NominaApp\NominaApp.csproj", "{19010548-FD34-44CA-BFD4-FBD56541ED07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionDocumentalApp", "GestionDocumentalApp\GestionDocumentalApp.csproj", "{96442473-32EB-494A-A69C-0B94034E911A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{19010548-FD34-44CA-BFD4-FBD56541ED07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19010548-FD34-44CA-BFD4-FBD56541ED07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19010548-FD34-44CA-BFD4-FBD56541ED07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96442473-32EB-494A-A69C-0B94034E911A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96442473-32EB-494A-A69C-0B94034E911A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96442473-32EB-494A-A69C-0B94034E911A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96442473-32EB-494A-A69C-0B94034E911A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
