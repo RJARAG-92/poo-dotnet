@@ -1,3 +1,5 @@
+![POO en C# - Banner](./assets/banner.png)
+
 # 🧠 poo-dotnet – Ejemplos prácticos de Programación Orientada a Objetos (POO) en C#
 
 Este repositorio contiene una colección de ejemplos diseñados para demostrar la aplicación de los **principios fundamentales de la Programación Orientada a Objetos (POO)** en C#. Cada ejemplo simula un escenario empresarial diferente, implementando los conceptos de **Abstracción, Herencia, Encapsulamiento y Polimorfismo** de forma clara y estructurada.
