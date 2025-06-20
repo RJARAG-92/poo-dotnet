@@ -1,12 +1,12 @@
-﻿# 🧾 NominaApp – Ejemplo de Programación Orientada a Objetos (POO) en C#
+﻿# 📄 GestionDocumentalApp – Ejemplo de Programación Orientada a Objetos (POO) en C#
 
-Este proyecto forma parte del repositorio `poo-dotnet` y demuestra cómo aplicar los **principios fundamentales de la Programación Orientada a Objetos (POO)** en un sistema empresarial de cálculo de nómina.
+Este proyecto forma parte del repositorio `poo-dotnet` y demuestra cómo aplicar los **principios de la Programación Orientada a Objetos (POO)** en un sistema de gestión de documentos empresariales.
 
 ---
 
 ## 🎯 Objetivo
 
-Simular un sistema de gestión de empleados que calcule el salario de diferentes tipos de empleados utilizando los principios de POO.
+Simular un sistema documental donde se gestionan distintos tipos de documentos como informes y contratos, usando los principios fundamentales de POO.
 
 ---
 
@@ -14,10 +14,10 @@ Simular un sistema de gestión de empleados que calcule el salario de diferentes
 
 | Principio        | Descripción |
 |------------------|-------------|
-| **Abstracción**  | Se define una clase abstracta `Empleado` que expone la operación `CalcularSalario()` sin preocuparse de su implementación concreta. |
-| **Herencia**     | `EmpleadoTiempoCompleto` y `EmpleadoPorHoras` heredan de `Empleado`, reutilizando atributos comunes. |
-| **Encapsulamiento** | Los atributos internos como `SalarioMensual` o `TarifaPorHora` están encapsulados y no son accesibles directamente desde fuera. |
-| **Polimorfismo** | Se utiliza una lista de tipo `Empleado` para recorrer y ejecutar el método `CalcularSalario()` sin conocer la clase específica. |
+| **Abstracción**  | La clase abstracta `Documento` define el método `MostrarResumen()` que cada tipo de documento debe implementar. |
+| **Herencia**     | `Informe` y `Contrato` heredan de `Documento`, reutilizando el comportamiento común e implementando su propia versión del resumen. |
+| **Encapsulamiento** | Atributos como `contenido` y `clausulas` están protegidos y modificables solo mediante métodos controlados. |
+| **Polimorfismo** | El gestor de documentos maneja una lista de objetos `Documento` y puede invocar `MostrarResumen()` sin conocer su tipo exacto. |
 
 ---
 
@@ -26,38 +26,37 @@ Simular un sistema de gestión de empleados que calcule el salario de diferentes
 Este es un proyecto de consola. Puedes ejecutarlo directamente desde Visual Studio o CLI:
 
 ```bash
-dotnet run --project NominaApp
+dotnet run --project GestionDocumentalApp
 ```
 
-La salida mostrará el salario calculado para cada empleado según su tipo.
+La salida mostrará los resúmenes generados para cada documento gestionado.
 
 ---
 
 ## 📂 Estructura del proyecto
 
 ```
-NominaApp/
+GestionDocumentalApp/
 │
-├── Empleados/
-│   ├── Empleado.cs                # Clase base abstracta
-│   ├── EmpleadoPorHoras.cs        # Subclase concreta
-│   └── EmpleadoTiempoCompleto.cs  # Subclase concreta
+├── Documentos/
+│   ├── Documento.cs            # Clase abstracta base
+│   ├── Informe.cs              # Documento tipo informe
+│   └── Contrato.cs             # Documento tipo contrato
 │
 ├── Servicios/
-│   └── ServicioNomina.cs          # Clase que procesa la nómina
+│   └── GestorDocumentos.cs     # Clase que gestiona una lista de documentos
 │
-├── Program.cs                     # Punto de entrada
-└── README.md                      # Descripción del proyecto
+├── Program.cs                  # Punto de entrada
+└── README.md                   # Descripción del proyecto
 ```
 
 ---
 
 ## 🧠 Aprendizajes clave
 
-- Cómo modelar jerarquías usando abstracción y herencia.
-- Aplicación práctica del polimorfismo.
-- Separación clara de responsabilidades.
-- Encapsulamiento de lógica interna de cálculo de salario.
+- Cómo estructurar una jerarquía de clases para representar entidades del dominio.
+- Uso del polimorfismo para recorrer objetos heterogéneos con una interfaz común.
+- Buenas prácticas de encapsulamiento en clases orientadas a objetos.
 
 ---
 
